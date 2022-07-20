@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal finance</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+    <body>
+      <h1>Add transaction</h1>
+      <form method="POST">
+        <div class="form__fieldset">
+          <label for="amount" class="form__label">Card Number:</label>
+          <input type="text" name="card" id="amount" class="form__input" />
+        </div>
+    
+        <div class="form__fieldset">
+          <label for="amount" class="form__label">Amount:</label>
+          <input type="text" name="amount" id="amount" class="form__input" />
+        </div>
+    
+        <div class="form__fieldset">
+          <label for="date" class="form__label">Expiration:</label>
+          <input type="text" name="date" id="date" class="form__input" />
+        </div>
+    
+        <div class="form__fieldset">
+          <label for="account" class="form__label">Transaction Type:</label>
+          <select name="command" id="account" class="form__input form__select">
+            <option value="Sale">Sale</option>
+            <option value="Authorization">Authorization</option>
+            <option value="Capture">Capture</option>
+            <option value="Void">Void</option>
+          </select>
+      </div>
+
+      <div class="form__fieldset">
+        <input
+          class="form__submit form__input"
+          type="submit"
+          value="Add transaction"
+        />
+      </div>
+    </form>
+  </body>
+</html>
