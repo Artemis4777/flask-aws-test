@@ -63,7 +63,7 @@ def home():
             payload = json.dumps({
                 "xcardnum": xcardnum,
                 "xexp": xexp,
-                "xkey": "artemisdev9d423588838a438f9036c65c3318140c",
+                "xkey": "",
                 "xversion": "4.5.9",
                 "xsoftwarename": "Nosson",
                 "xsoftwareversion": "2.3.5",
